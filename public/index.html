@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="stylesheet" href="https://cache.amap.com/lbs/static/AMap.PlaceSearchRender1120.css?v=1.0.0.3112">
+    <link href="https://cdn.bootcss.com/photoswipe/4.1.2/photoswipe.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/photoswipe/4.1.2/default-skin/default-skin.min.css" rel="stylesheet">
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.13&key=4d8dab862ef6fe1b1dfa3f36b403ef23&plugin=AMap.Geocoder&callback=init"></script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script type="text/javascript">
+      window.init = function(){
+        var map = new AMap.Map('container', {
+          center:[117.000923,36.675807],
+          zoom:11
+        });
+      }
+    </script>
+  </body>
+  
+</html>
